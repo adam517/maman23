@@ -76,12 +76,12 @@ void parse_file(HashTable * hashTable, char* fileName){
 
 void print_result(HashTable *HashTable){
     char string[10];
-    size_t i;
+    int i;
     for (i = LOOP_INIALIZE; i < NUM; i++)
     {
         if(HashTable -> arr[i] !=NULL){
             FileData *node = HashTable -> arr[i];
-            printf("%zu appears in",i);
+            printf("%d appears in",i);
             while(node!=NULL){
                 if(node->count == 1) strcpy(string,"time");
                 else strcpy(string,"times");
