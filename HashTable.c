@@ -81,7 +81,7 @@ void print_result(HashTable *HashTable){
     {
         if(HashTable -> arr[i] !=NULL){
             FileData *node = HashTable -> arr[i];
-            printf("%lu appears in",i);
+            printf("%zu appears in",i);
             while(node!=NULL){
                 if(node->count == 1) strcpy(string,"time");
                 else strcpy(string,"times");
